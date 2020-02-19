@@ -76,3 +76,13 @@ html{
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
+  /* styling what we do */
+.what{
+    margin-bottom: 40px;
+    margin-top: 40px;
+  } 
+  .row .box{
+    float: left;
+    width: 450px; 
+  }
