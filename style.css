@@ -153,4 +153,25 @@ html{
     margin-bottom: 20px;
     align-items: center;
   }
+
+  /* styling footer */
+footer{
+    text-align: center;
+    padding-top: 30px;
+  }
+  footer p{
+    margin-top: 10px;
+  }
+  
+  /* styling overlay */
+  #overlay1,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+    display: none;
+    color: black;
+    background-color:rgba(255, 255, 255, 0.456);
+    position:absolute;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50%;
+  }
   
