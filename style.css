@@ -59,3 +59,9 @@ html{
       transform: translateY(-45px);
     }
   } */
+
+  /* styling about */
+.about{
+    padding-bottom: 30px;
+    padding-top:40px;
+  }
