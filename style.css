@@ -97,6 +97,21 @@ h3 {
   padding-top: 40px;
 }
 
+#design{
+  /* height: 0; */
+  overflow: hidden;
+}
+
+#development{
+  /* height: 0; */
+  overflow: hidden;
+}
+
+#product{
+  /* height: 0; */
+  overflow: hidden;
+}
+
 .row #box {
   float: left;
   width: 450px;
@@ -217,19 +232,24 @@ footer p {
 #overlay6,
 #overlay7,
 #overlay8 {
-  opacity: 0.55;
+  opacity: 0.8;
   /* display: none; */
   transition: .5s ease; 
-  color: black;
   text-align: center;
   margin-top: 100px;
   margin-left: 130px;
   font-size: 20px;
   font-weight: bold;
   position: absolute;
-  /* -webkit-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);  */
+  transform: translate(-50%, -50%);
+}
+
+.text{
+  color: black;
+  background-color: white;
+  border: 1px solid white;
 }
 
 /* styling responsiveness */
