@@ -1,77 +1,65 @@
-
 //toggle
-$(document).ready(function(){
-  $("#box").click(function(){
-    $("#design-img").toggle();
+$(document).ready(function() {
+  $("#box1").click(function() {
     $("#design").toggle();
+    $("#design-img").toggle();
   });
 
-  $("#box").click(function(){
-    $("#development-img").toggle();
+  $("#box2").click(function() {
     $("#development").toggle();
+    $("#development-img").toggle();
   });
 
-  $("#box").click(function(){
-    $("#product-img").toggle();
+  $("#box3").click(function() {
     $("#product").toggle();
-  });
-});
-  
-//portfio overlay 
-$(document).ready(function(){
-  $(".row").hover(function(){
-    $("#work1").show();
-    $("#overlay1").hide();
-  });
-
-  $(".row").hover(function(){
-    $("#work2").show();
-    $("#overlay2").hide();
-  });
-
-  $(".row").hover(function(){
-    $("#work3").show();
-    $("#overlay3").hide();
-  });
-
-  $(".row").hover(function(){
-    $("#work4").show();
-    $("#overlay4").hide();
-  });
-
-  $(".row").hover(function(){
-    $("#work5").show();
-    $("#overlay5").hide();
-  });
-
-  $(".row").hover(function(){
-    $("#work6").show();
-    $("#overlay6").hide();
-  });
-
-  $(".row").hover(function(){
-    $("#work7").show();
-    $("#overlay7").hide();
-  });
-
-  $(".row").hover(function(){
-    $("#work8").show();
-    $("#overlay8").hide();
+    $("#product-img").toggle();
   });
 });
 
-  // //form function
-  $(document).ready(function(){
-    $("form#form1").submit(function(){
-      var name = $("input#name").value();
-      var email = $("input#email").value();
-      var message = $("textarea#comment").value();
-      if ($("input#name").value() && $("input#email").value()){
-        alert (name + ", we have received your message. Thank you for reaching out to us.");
-      }
-      else {
-        alert("Please enter your name and email!");
-      }
-      
-    });
+//portfio hover show
+$(document).ready(function() {
+  $("#work1").hover(function() {
+    $("#show1").toggle();
   });
+
+  $("#work2").hover(function() {
+    $("#show2").toggle();
+  });
+
+  $("#work3").hover(function() {
+    $("#show3").toggle();
+  });
+
+  $("#work4").hover(function() {
+    $("#show4").toggle();
+  });
+
+  $("#work5").hover(function() {
+    $("#show5").toggle();
+  });
+
+  $("#work6").hover(function() {
+    $("#show6").toggle();
+  });
+
+  $("#work7").hover(function() {
+    $("#show7").toggle();
+  });
+
+  $("#work8").hover(function() {
+    $("#show8").toggle();
+  });
+});
+
+//form function
+function myMessage() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("comment").value;
+
+  if (email !== "" && name !== "" && message !== "") {
+    alert("Hello" + " " + name + " we have received your message. we wiil reach out to you soon");
+  } else if (email == "" || name !== "" || message !== "") {
+    alert("Please fill in all the details");
+  }
+}
