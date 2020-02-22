@@ -58,6 +58,7 @@ function myMessage() {
   var message = document.getElementById("comment").value;
 
   if (email !== "" && name !== "" && message !== "") {
+    // document.getElementById("pop").innerHTML =
     alert("Hello" + " " + name + " we have received your message. we wiil reach out to you soon");
   } else if (email == "" || name !== "" || message !== "") {
     alert("Please fill in all the details");

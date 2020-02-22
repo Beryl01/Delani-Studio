@@ -168,17 +168,20 @@
 
           <form id="form1">
             <div class="form-group form-inline">
-              <input type="text" class="form" placeholder="Name...." name="name" id="name" value="">
-              <input type="email" class="form" placeholder="Email...." name="email" id="email" value="">
+              <input type="text" class="form" placeholder="Name...." name="name" id="name" value="" 
+              data-msg="Please enter at least 4 chars">
+              <input type="email" class="form" placeholder="Email...." name="email" id="email" value="" 
+              data-msg="Please enter a valid email">
             </div>
 
             <div>
-              <textarea rows="8" id="comment" placeholder="Write your message here...."></textarea>
+              <textarea rows="8" id="comment" placeholder="Write your message here...." 
+              data-msg="Please write something for us"></textarea>
             </div>
 
-            <button type="submit" onclick="myMessage()" class="button">Submit</button>
+            <button type="submit" class="btn btn-primary" onclick="myMessage()" id="button">Submit</button>
           </form>
-          <h1> Thank you for contacting us!</h1>
+          <h1 id="pop"> Thank you for contacting us!</h1>
         </div>
       </div>
       <!-- contact section -->
