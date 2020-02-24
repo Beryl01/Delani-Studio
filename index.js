@@ -53,9 +53,9 @@ $(document).ready(function() {
 
 //form function
 function myMessage() {
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("comment").value;
+  var name = document.getElementById("name").value; //mce-FNAME
+  var email = document.getElementById("email").value; //mce-EMAIL
+  var message = document.getElementById("comment").value; //mce-MMERGE2
 
   if (email !== "" && name !== "" && message !== "") {
     // document.getElementById("pop").innerHTML =
