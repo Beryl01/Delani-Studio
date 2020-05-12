@@ -1,5 +1,6 @@
 ## {Project Name}
-Delani Studios
+Delani Studio
+
 ## {Project Description}
 Delani Studios is a webpage for professional tech company.
 ## {Author}
